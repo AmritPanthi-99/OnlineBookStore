@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Addicts</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+</head>
+
+<body>
+    <!-- desktop header  -->
+
+    <header id="d-header">
+        <a href="#" class="logo">Book Addicts</a>
+        <ul class="navigation">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </header>
+    <!-- desktop header end  -->
+
+    <!-- mobile header -->
+    <header id="m-header">
+        <div class="header-top">
+            <a href="#" class="m-logo block-left">Book Addicts</a>
+            <a class="toggler block-right"><i class="fa fa-bars" aria-hidden="true" id="menubar"></i></a>
+        </div>
+        <ul class="m-navigation">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </header>
+    <!-- mobile header end -->
+
+    <div class="cart-container">
+        <div class="counter-btn">
+            <nav>
+                <div class="cart__counter">
+                    <i class="fa fa-shopping-cart"></i><span id="total__counter">0</span>
+                </div>
+            </nav>
+            <div class="cart">
+                <div class="cart__items">
+                    <div class="check_out">
+                        <h4>Total Ammount : $</h4>
+                        <h4 class="total__cost">0</h4><a href="checkout.html" class="cart-btn check_out_btn">Checkout</a> </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="products">
+            <div class="product__element">
+                <input type="hidden" name="Malice" class ="product__id" value="1" />
+                <img src="images/pro1.jpg" alt="Malice" class="image" />
+                <h4 class="product__name">Malice</h4>
+                <h5 class="product__price">$60</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="I Wish You All The Best" class="product__id" value="2" />
+                <img src="images/pro2.jpg" alt="I Wish You All The Best" class="image" />
+                <h4 class="product__name">I Wish You All The Best</h4>
+                <h5 class="product__price">$79.99</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="Almost There and Almost Not" class="product__id" value="3" />
+                <img src="images/pro3.jpg" alt="Almost There and Almost Not" class="image" />
+                <h4 class="product__name">Almost There and Almost Not</h4>
+                <h5 class="product__price">$70</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="The Other Black Girl" class="product__id" value="4" />
+                <img src="images/pro4.jpg" alt="The Other Black Girl" class="image" />
+                <h4 class="product__name">The Other Black Girl</h4>
+                <h5 class="product__price">$90.99</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="An Unlikely Spy" class="product__id" value="5" />
+                <img src="images/pro5.jpg" alt="An Unlikely Spy" class="image" />
+                <h4 class="product__name">An Unlikely Spy</h4>
+                <h5 class="product__price">$40</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="The Vixen" class="product__id" value="6" />
+                <img src="images/pro6.jpg" alt="The Vixen" class="image" />
+                <h4 class="product__name">The Vixen</h4>
+                <h5 class="product__price">$55</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="The Night Watchman" class="product__id" value="7" />
+                <img src="images/pro7.jpg" alt="The Night Watchman" class="image" />
+                <h4 class="product__name">The Night Watchman</h4>
+                <h5 class="product__price">$69.99</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="The List of Things That Will Not Change" class="product__id" value="8" />
+                <img src="images/pro8.jpg" alt="The List of Things That Will Not Change" class="image" />
+                <h4 class="product__name">The List of Things That Will Not Change</h4>
+                <h5 class="product__price">$49.99</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="The Canterville Ghost" class="product__id" value="9" />
+                <img src="images/pro9.jpg" alt="The Canterville Ghost" class="image" />
+                <h4 class="product__name">The Canterville Ghost</h4>
+                <h5 class="product__price">$65</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="Bridgerton The Duke And I" class="product__id" value="10" />
+                <img src="images/pro10.jpg" alt="Bridgerton The Duke And I" class="image" />
+                <h4 class="product__name">Bridgerton The Duke And I</h4>
+                <h5 class="product__price">$55</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="The New Wilderness" class="product__id" value="11" />
+                <img src="images/pro11.jpg" alt="The New Wilderness" class="image" />
+                <h4 class="product__name">The New Wilderness</h4>
+                <h5 class="product__price">$44</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="Dust Off the Bones" class="product__id" value="12" />
+                <img src="images/pro12.jpg" alt="Dust Off the Bones" class="image" />
+                <h4 class="product__name">Dust Off the Bones</h4>
+                <h5 class="product__price">$69.99</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="Paper Teacher's Service Commission" class="product__id" value="13" />
+                <img src="images/special1.jpg" alt="Paper Teacher's Service Commission" class="image" />
+                <h4 class="product__name">3<sup style="color: black;">rd</sup> Paper Teacher's Service Commission</h4>
+                <h5 class="product__price">$20</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="Caul Baby" class="product__id" value="14" />
+                <img src="images/pro14.jpg" alt="Caul Baby" class="image" />
+                <h4 class="product__name">Caul Baby</h4>
+                <h5 class="product__price">$30</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="Song for a Whale" class="product__id" value="15" />
+                <img src="images/pro15.jpg" alt="Song for a Whale" class="image" />
+                <h4 class="product__name">Song for a Whale</h4>
+                <h5 class="product__price">$45</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="The Power Of Positive Thinking" class="product__id" value="16" />
+                <img src="images/pro16.jpg" alt="The Power Of Positive Thinking" class="image" />
+                <h4 class="product__name">The Power Of Positive Thinking</h4>
+                <h5 class="product__price">$85</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="How To Win Friends & Influence People" class="product__id" value="17" />
+                <img src="images/pro17.jpg" alt="How To Win Friends & Influence People" class="image" />
+                <h4 class="product__name">How To Win Friends & Influence People</h4>
+                <h5 class="product__price">$65</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="The ClockWork Orange" class="product__id" value="18" />
+                <img src="images/pro18.jpg" alt="The ClockWork Orange" class="image" />
+                <h4 class="product__name">The ClockWork Orange</h4>
+                <h5 class="product__price">$90</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="Somebody's Daughter" class="product__id" value="19" />
+                <img src="images/pro19.jpg" alt="Somebody's Daughter" class="image" />
+                <h4 class="product__name">Somebody's Daughter</h4>
+                <h5 class="product__price">$80</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="Bear Boy" class="product__id" value="20" />
+                <img src="images/pro20.jpg" alt="Bear Boy" class="image" />
+                <h4 class="product__name">Bear Boy</h4>
+                <h5 class="product__price">$85</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="Teacher Service Commission Essentials" class="product__id" value="21" />
+                <img src="images/special2.jpg" alt="Teacher Service Commission Essentials" class="image" />
+                <h4 class="product__name">Teacher Service Commission Essentials</h4>
+                <h5 class="product__price">$25</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="This Book Is Anti-Racist" class="product__id" value="22" />
+                <img src="images/pro22.jpg" alt="This Book Is Anti-Racist" class="image" />
+                <h4 class="product__name">This Book Is Anti-Racist</h4>
+                <h5 class="product__price">$60</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="The Plot" class="product__id" value="23" />
+                <img src="images/pro23.jpg" alt="The Plot" class="image" />
+                <h4 class="product__name">The Plot</h4>
+                <h5 class="product__price">$80</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="One Last Stop" class="product__id" value="24" />
+                <img src="images/pro24.jpg" alt="One Last Stop" class="image" />
+                <h4 class="product__name">One Last Stop</h4>
+                <h5 class="product__price">$85</h5>
+                <div class="cart-btn__add__to__cart">Add To Cart</div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2>About us</h2>
+                <div class="content">
+                    <p>This is the website where you can find the different varieties of book.</p>
+                    <div class="social">
+                        <a href="https://www.facebook.com/" target="_blank"><span> <i class="fa fa-facebook-official" aria-hidden="true"></i></span></a>
+                        <a href="https://twitter.com/" target="_blank"><span> <i class="fa fa-twitter-square" aria-hidden="true"></i></span></a>
+                        <a href="https://www.instagram.com/" target="_blank"><span> <i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+                        <a href="https://www.youtube.com/" target="_blank"><span> <i class="fa fa-youtube-play" aria-hidden="true"></i></span></a>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="center box">
+                <h2>Address</h2>
+                <div class="content">
+                    <div class="place">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span class="text">Budhanilkantha, Kathmandu</span>
+                    </div>
+                    <div class="phone">
+                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        <span class="text">+977 9818565467</span>
+                    </div>
+                    <div class="email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="text">bookaddicts33@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right box">
+                <h2>My Details</h2>
+
+                <div class="content">
+                    <div class="place">
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                        <span class="text">Course: Bsc hons. Computing</span>
+                    </div>
+                    <div class="phone">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        <span class="text">Module: Web Development</span>
+                    </div>
+                    <div class="email">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <span class="text">Section: 'C'</span>
+                    </div>
+                    <div class="email">
+                        <i class="fa fa-id-card-o" aria-hidden="true"></i>
+                        <span class="text">University ID: 77261088</span>
+                    </div>
+                    <h4><a href="../index.html" target="_blank">Click here to go to the Lab Exercises</a></h4>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="bottom">
+                <i class="fa fa-copyright" aria-hidden="true">2020 All rights reserved.</i>
+        </div>
+    </footer>
+    <div class="scroll-btn">
+        <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="store.js"></script>
+    
+</body>
+</html>

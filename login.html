@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Addicts</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+</head>
+
+<body>
+    <!-- desktop header  -->
+
+    <header id="d-header">
+        <a href="#" class="logo">Book Addicts</a>
+        <ul class="navigation">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </header>
+    <!-- desktop header end  -->
+
+    <!-- mobile header -->
+    <header id="m-header">
+        <div class="header-top">
+            <a href="#" class="m-logo block-left">Book Addicts</a>
+            <a class="toggler block-right"><i class="fa fa-bars" aria-hidden="true" id="menubar"></i></a>
+        </div>
+        <ul class="m-navigation">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </header>
+    <!-- mobile header end -->
+
+
+    <div class="container login-container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form class="sign-in-form">
+                    <h2 class="title title-login">Login</h2>
+                    <div class="input-field">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" placeholder="Username" id="username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input type="password" placeholder="Password" id="password">
+                        <i class="fa fa-eye" aria-hidden="true" id="eye" onclick="toggle()"></i>
+                    </div>
+                    <input type="submit" value="login" class="loginbtn solid" onclick="Loginvalidate()">
+                    <p class="social-text">or Login with </p>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/" target="_blank" class="social-icon">
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="social-icon">
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                            <i class="fa fa-google" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" class="social-icon">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </form>
+                <form class="sign-up-form">
+                    <h2 class="title title-signup">Signup</h2>
+                    <div class="input-field">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" id="fullname" placeholder="Full name">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" id="lusername" placeholder="Username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <input type="text" id="email" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <input type="text" id="address" placeholder="Address">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <input type="number" id="contact" placeholder="Contact">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input type="password" id="lpassword" placeholder="Password">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input type="password" id="cfpassword" placeholder="Confirm Password">
+                    </div>
+                    <input type="submit" value="Signup" class="loginbtn solid" onclick="return SignupValidate()">
+                    <p class="social-text">or Signup with </p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-google" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Still don't have an account?</h3>
+                    <p>Simply click on the button below to register an account.</p>
+                    <button class="btn transparent" id="sign-up-btn">Sign up</button>
+                </div>
+                <img src="images/login.svg" class="image" alt="login image">
+            </div>
+
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Already have an account?</h3>
+                    <p>Simply click on the button below to login your account.</p>
+                    <button class="btn transparent" id="sign-in-btn">Sign in</button>
+                </div>
+                <img src="images/signup.svg" class="image" alt="login image">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2>About us</h2>
+                <div class="content">
+                    <p>This is the website where you can find the different varieties of book.</p>
+                    <div class="social">
+                        <a href="https://www.facebook.com/" target="_blank"><span> <i class="fa fa-facebook-official" aria-hidden="true"></i></span></a>
+                        <a href="https://twitter.com/" target="_blank"><span> <i class="fa fa-twitter-square" aria-hidden="true"></i></span></a>
+                        <a href="https://www.instagram.com/" target="_blank"><span> <i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+                        <a href="https://www.youtube.com/" target="_blank"><span> <i class="fa fa-youtube-play" aria-hidden="true"></i></span></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="center box">
+                <h2>Address</h2>
+                <div class="content">
+                    <div class="place">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span class="text">Budhanilkantha, Kathmandu</span>
+                    </div>
+                    <div class="phone">
+                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        <span class="text">+977 9818565467</span>
+                    </div>
+                    <div class="email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="text">bookaddicts33@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right box">
+                <h2>My Details</h2>
+
+                <div class="content">
+                    <div class="place">
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                        <span class="text">Course: Bsc hons. Computing</span>
+                    </div>
+                    <div class="phone">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        <span class="text">Module: Web Development</span>
+                    </div>
+                    <div class="email">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <span class="text">Section: 'C'</span>
+                    </div>
+                    <div class="email">
+                        <i class="fa fa-id-card-o" aria-hidden="true"></i>
+                        <span class="text">University ID: 77261088</span>
+                    </div>
+                    <h4><a href="../index.html" target="_blank">Click here to go to the Lab Exercises</a></h4>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="bottom">
+            <i class="fa fa-copyright" aria-hidden="true">2020 All rights reserved.</i>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        //login/signup
+        const sign_in_btn = document.querySelector("#sign-in-btn");
+        // alert(sign_in_btn);
+        const sign_up_btn = document.querySelector("#sign-up-btn");
+        //alert(sign_up_btn);
+        const container = document.querySelector(".container");
+
+        sign_up_btn.addEventListener("click", function () {
+            container.classList.add("sign-up-mode");
+        });
+
+        sign_in_btn.addEventListener("click", () => {
+            container.classList.remove("sign-up-mode");
+        });
+
+        var menu = document.querySelector('.toggler');
+
+        menu.addEventListener('click', () => {
+            var m = document.querySelector('.m-navigation');
+            // m.classList.toggle('m-nav-show');
+            if (m.style.display == "block") {
+
+
+                m.style.display = "none";
+            } else {
+                m.style.display = "block";
+
+
+            }
+        });
+    </script>
+</body>
+</html>

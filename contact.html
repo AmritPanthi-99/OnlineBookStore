@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Addicts</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- desktop header  -->
+
+    <header id="d-header">
+        <a href="#" class="logo">Book Addicts</a>
+        <ul class="navigation">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </header>
+    <!-- desktop header end  -->
+
+    <!-- mobile header -->
+    <header id="m-header">
+        <div class="header-top">
+            <a href="#" class="m-logo block-left">Book Addicts</a>
+            <a class="toggler block-right"><i class="fa fa-bars" aria-hidden="true" id="menubar"></i></a>
+        </div>
+        <ul class="m-navigation">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </header>
+    <!-- mobile header end -->
+
+
+    <section class="contact contact-section">
+        <div class="contact-container">
+            <h1 class="text-center">Contact Us</h1>
+
+            <div class="contact-form">
+                <form>
+                    <label style="font-size: 20px;">Name: </label>
+                    <input type="text" id="name" name="name" placeholder="Your name.....">
+
+                    <label style="font-size: 20px;">Email: </label>
+                    <input type="text" id="email" name="email" placeholder="Your email.....">
+
+                    <label style="font-size: 20px;">Message: </label>
+                    <!-- <input type="text" name="email" placeholder="your email....."> -->
+                    <textarea rows="2" cols="25" id="message" placeholder="Type your message here..."></textarea>
+
+
+                    <input type="submit" value="Submit" onclick="return validateContactForm()">
+                </form>
+            </div>
+
+            <div class="contact-form">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d112960.79481069627!2d85.29226951480344!3d27.
+                77820884772433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d27.778171!2d85.362546!5e0!3m2!1sen!
+                2snp!4v1623547127194!5m2!1sen!2snp" height="420" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2>About us</h2>
+                <div class="content">
+                    <p>This is the website where you can find the different varieties of book.</p>
+                    <div class="social">
+                        <a href="https://www.facebook.com/" target="_blank"><span> <i class="fa fa-facebook-official" aria-hidden="true"></i></span></a>
+                        <a href="https://twitter.com/" target="_blank"><span> <i class="fa fa-twitter-square" aria-hidden="true"></i></span></a>
+                        <a href="https://www.instagram.com/" target="_blank"><span> <i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+                        <a href="https://www.youtube.com/" target="_blank"><span> <i class="fa fa-youtube-play" aria-hidden="true"></i></span></a>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="center box">
+                <h2>Address</h2>
+                <div class="content">
+                    <div class="place">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span class="text">Budhanilkantha, Kathmandu</span>
+                    </div>
+                    <div class="phone">
+                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        <span class="text">+977 9818565467</span>
+                    </div>
+                    <div class="email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="text">bookaddicts33@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right box">
+                <h2>My Details</h2>
+
+                <div class="content">
+                    <div class="place">
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                        <span class="text">Course: Bsc hons. Computing</span>
+                    </div>
+                    <div class="phone">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        <span class="text">Module: Web Development</span>
+                    </div>
+                    <div class="email">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <span class="text">Section: 'C'</span>
+                    </div>
+                    <div class="email">
+                        <i class="fa fa-id-card-o" aria-hidden="true"></i>
+                        <span class="text">University ID: 77261088</span>
+                    </div>
+                    <h4><a href="../index.html" target="_blank">Click here to go to the Lab Exercises</a></h4>
+                </div>
+                
+            </div>
+        </div>
+        <div class="bottom">
+                <i class="fa fa-copyright" aria-hidden="true">2020 All rights reserved.</i>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        var menu = document.querySelector('.toggler');
+
+        menu.addEventListener('click', () => {
+            var m = document.querySelector('.m-navigation');
+            // m.classList.toggle('m-nav-show');
+            if (m.style.display == "block") {
+
+
+                m.style.display = "none";
+            } else {
+                m.style.display = "block";
+
+
+            }
+        });
+
+         //form validation
+         function validateContactForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            if (name == null || name == "") {
+                alert("Please enter the name");
+                return false;
+            }
+
+            if (email == null || email == "") {
+                alert("Please enter the email");
+                return false;
+            }
+
+            if (message == null || message == "") {
+                alert("Please type some message");
+                return false;
+            }
+
+            var exp = /^([a-z 0-9\.-]+)@([a-z0-9]+).([a-zA-Z.]+[a-zA-Z])$/g;
+            if (!exp.test(email)) {
+                alert("Email format doesn't match");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
